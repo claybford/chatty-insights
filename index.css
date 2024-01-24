@@ -1,0 +1,158 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 95%;
+    height: 95%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.sidebar {
+    background: #393E41;
+    padding: 20px;
+    width: 50%;
+    max-height: 100%;
+    min-height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+    .sidebar h1 {
+        margin: 0;
+        padding-bottom: 20px;
+        font-size: x-large;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+    }
+
+    .sidebar .title {
+        color: #FFFFFF;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: none;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .sidebar textarea, .sidebar input, .sidebar button, .sidebar .file-list {
+        background: #EEEEEE;
+        width: 100%;
+        box-sizing: border-box; /* Include padding in the width */
+        border: none;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        color: #333;
+    }
+
+    .sidebar textarea {
+        border: 3px solid #a2a2a2;
+        color: #333;
+        resize: none; /* Prevent resizing */
+        min-height: 20px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: x-small;
+    }
+
+        .sidebar textarea:focus, .sidebar input:focus {
+            outline: none;
+            border: 3px solid #00ADB5;
+        }
+
+    .sidebar button {
+        background: #00ADB5;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+        .sidebar button:disabled {
+            background: #a2a2a2;
+        }
+
+    .sidebar .file-list {
+        min-height: 60px; /* Adjust based on content */
+        display: flex;
+        align-items: center;
+        color: #333;
+        font-family: 'Roboto Mono', monospace;
+        font-size: x-small;
+        white-space: pre-line;
+    }
+
+.side-by-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.hint {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Pushes content to bottom */
+    align-items: flex-start; /* Aligns content to start (left) */
+    padding-bottom: 15px; /* adjust as needed */
+}
+
+.space {
+    height: 30px;
+}
+/* Chat area stuff */
+.main-content {
+    flex-grow: 1;
+    background: #c6cacc;
+    padding: 20px;
+}
+
+.bubble-container {
+    height: 100%;
+}
+
+    .bubble-container .input-wrap textarea {
+        margin: 0;
+        width: calc(100% - 17px);
+    }
+
+.invisible-textarea {
+    pointer-events: none; /* Prevents mouse clicks and selections */
+    user-select: none; /* Prevents text selection */
+    visibility: hidden; /* Makes the textarea invisible */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 95%;
+        height: 100%;
+        overflow: scroll;
+        border-radius: 0px;
+    }
+
+    .sidebar {
+        width: auto;
+        max-height: 150%;
+        min-height: 125%;
+    }
+
+    .main-content {
+        order: 1;
+        max-height: 150%;
+        min-height: 125%;
+    }
+}

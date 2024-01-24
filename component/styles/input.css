@@ -1,0 +1,37 @@
+/* style user input field */
+.bubble-container .input-wrap {
+	position: absolute;
+	bottom: 0;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	text-align: center;
+}
+	.bubble-container .input-wrap textarea {
+		display: inline-block;
+		font-family: 'Roboto', sans-serif;
+		font-size: small;
+		box-sizing: border-box;
+		background: #EEEEEE;
+		border: 3px solid #a2a2a2;
+		color: #333;
+		border-radius: 4px;
+		padding: 10px 15px;
+		line-height: 1.25em;
+		resize: none;
+		outline: none;
+	}
+		.bubble-container .input-wrap textarea:focus, .input-wrap input:focus {
+			outline: none;
+			border: 3px solid #00ADB5;
+		}
+.bubble.reply-freeform {
+	margin: 0;
+}
+.bubble.reply.reply-freeform.say .bubble-content .bubble-button {
+	text-align: left;
+}
+.bubble.reply.say.bubble-hidden {
+	margin: 0;
+	transform: scale(0);
+	height: 0;
+}
