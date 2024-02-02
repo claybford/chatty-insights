@@ -1,4 +1,4 @@
-I've been curious for a while how AI can help with synthesyzing user research and help design teams interact with the knowledge they've already gained from customer touchpoints. To that end, I've developed this web application for synthesizing research transcripts into summaries and using those summaries to launch a "conversation" with the "user".
+I've been curious for a while how AI can help with synthesizing user research and help design teams interact with the knowledge they've already gained from customer touchpoints. To that end, I've developed this web application for synthesizing research transcripts into summaries and using those summaries to launch a "conversation" with the "user".
 
 The application uses the following prompting strategy to to effectively focus the information from transcripts:
 1. Takes in transcript files and summarizes each using a given summarization prompt.
