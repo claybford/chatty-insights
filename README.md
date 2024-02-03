@@ -10,7 +10,7 @@ The idea behind this strategy is that by focusing the AI model on known importan
 2. The AI model will not get "lost in the sauce" from the huge context window that would be nesessary for processing all transcripts at once.
 3. Processing time for a conversational interface will be reduced from one attempting to use all transcript data simultaneously.
 
-The client-side manages the pertinents of synthsizing and chatting, the Node.js/Express server application (server.js) merely handles interop with the OpenAI API as to not expose or require an API key.
+The client-side manages the pertinents of synthesizing and chatting, the Node.js/Express server application (server.js) merely handles interop with the OpenAI API as to not expose or require an API key.
 
 Developed by Clayton Ford
 
